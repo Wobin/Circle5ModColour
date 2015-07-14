@@ -1,0 +1,283 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "wobster+pebble@gmail.com",
+    "longName": "Circle-5-MOD",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/0a.png",
+                "name": "0a",
+                "type": "png"
+            },
+            {
+                "file": "images/0h.png",
+                "name": "0h",
+                "type": "png"
+            },
+            {
+                "file": "images/1h.png",
+                "name": "1h",
+                "type": "png"
+            },
+            {
+                "file": "images/2h.png",
+                "name": "2h",
+                "type": "png"
+            },
+            {
+                "file": "images/3h.png",
+                "name": "3h",
+                "type": "png"
+            },
+            {
+                "file": "images/4h.png",
+                "name": "4h",
+                "type": "png"
+            },
+            {
+                "file": "images/5h.png",
+                "name": "5h",
+                "type": "png"
+            },
+            {
+                "file": "images/6h.png",
+                "name": "6h",
+                "type": "png"
+            },
+            {
+                "file": "images/7h.png",
+                "name": "7h",
+                "type": "png"
+            },
+            {
+                "file": "images/8h.png",
+                "name": "8h",
+                "type": "png"
+            },
+            {
+                "file": "images/9h.png",
+                "name": "9h",
+                "type": "png"
+            },
+            {
+                "file": "images/10h.png",
+                "name": "10h",
+                "type": "png"
+            },
+            {
+                "file": "images/11h.png",
+                "name": "11h",
+                "type": "png"
+            },
+            {
+                "file": "images/0d.png",
+                "name": "0d",
+                "type": "png"
+            },
+            {
+                "file": "images/1d.png",
+                "name": "1d",
+                "type": "png"
+            },
+            {
+                "file": "images/2d.png",
+                "name": "2d",
+                "type": "png"
+            },
+            {
+                "file": "images/3d.png",
+                "name": "3d",
+                "type": "png"
+            },
+            {
+                "file": "images/4d.png",
+                "name": "4d",
+                "type": "png"
+            },
+            {
+                "file": "images/5d.png",
+                "name": "5d",
+                "type": "png"
+            },
+            {
+                "file": "images/6d.png",
+                "name": "6d",
+                "type": "png"
+            },
+            {
+                "file": "images/7d.png",
+                "name": "7d",
+                "type": "png"
+            },
+            {
+                "file": "images/8d.png",
+                "name": "8d",
+                "type": "png"
+            },
+            {
+                "file": "images/9d.png",
+                "name": "9d",
+                "type": "png"
+            },
+            {
+                "file": "images/0w.png",
+                "name": "0w",
+                "type": "png"
+            },
+            {
+                "file": "images/1w.png",
+                "name": "1w",
+                "type": "png"
+            },
+            {
+                "file": "images/2w.png",
+                "name": "2w",
+                "type": "png"
+            },
+            {
+                "file": "images/3w.png",
+                "name": "3w",
+                "type": "png"
+            },
+            {
+                "file": "images/4w.png",
+                "name": "4w",
+                "type": "png"
+            },
+            {
+                "file": "images/5w.png",
+                "name": "5w",
+                "type": "png"
+            },
+            {
+                "file": "images/6w.png",
+                "name": "6w",
+                "type": "png"
+            },
+            {
+                "file": "images/0b.png",
+                "name": "0b",
+                "type": "png"
+            },
+            {
+                "file": "images/1b.png",
+                "name": "1b",
+                "type": "png"
+            },
+            {
+                "file": "images/2b.png",
+                "name": "2b",
+                "type": "png"
+            },
+            {
+                "file": "images/3b.png",
+                "name": "3b",
+                "type": "png"
+            },
+            {
+                "file": "images/4b.png",
+                "name": "4b",
+                "type": "png"
+            },
+            {
+                "file": "images/5b.png",
+                "name": "5b",
+                "type": "png"
+            },
+            {
+                "file": "images/6b.png",
+                "name": "6b",
+                "type": "png"
+            },
+            {
+                "file": "images/7b.png",
+                "name": "7b",
+                "type": "png"
+            },
+            {
+                "file": "images/8b.png",
+                "name": "8b",
+                "type": "png"
+            },
+            {
+                "file": "images/9b.png",
+                "name": "9b",
+                "type": "png"
+            },
+            {
+                "file": "images/1a.png",
+                "name": "1a",
+                "type": "png"
+            },
+            {
+                "file": "images/2a.png",
+                "name": "2a",
+                "type": "png"
+            },
+            {
+                "file": "images/3a.png",
+                "name": "3a",
+                "type": "png"
+            },
+            {
+                "file": "images/4a.png",
+                "name": "4a",
+                "type": "png"
+            },
+            {
+                "file": "images/5a.png",
+                "name": "5a",
+                "type": "png"
+            },
+            {
+                "file": "images/20ba.png",
+                "name": "20ba",
+                "type": "png"
+            },
+            {
+                "file": "images/40ba.png",
+                "name": "40ba",
+                "type": "png"
+            },
+            {
+                "file": "images/60ba.png",
+                "name": "60ba",
+                "type": "png"
+            },
+            {
+                "file": "images/80ba.png",
+                "name": "80ba",
+                "type": "png"
+            },
+            {
+                "file": "images/100ba.png",
+                "name": "100ba",
+                "type": "png"
+            },
+            {
+                "file": "images/BG2.png",
+                "name": "BG",
+                "type": "png"
+            },
+            {
+                "file": "images/menu.png",
+                "name": "menu",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Circle-5-MODMOD",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "2ddfdbc0-eeb0-4afe-8e4d-74ac070495ed",
+    "versionLabel": "2.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
