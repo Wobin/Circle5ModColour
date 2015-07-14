@@ -129,6 +129,8 @@ void handle_battery(BatteryChargeState charge_state)
   if (charge_state.is_charging)
   {
     bitmap_layer_set_bitmap(btt_layer, bt100_img);
+    bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
+    replace_gbitmap_color(GColorBlack, GColorMediumSpringGreen, bt100_img, btt_layer);
   }
   else
   {
@@ -151,7 +153,7 @@ void handle_battery(BatteryChargeState charge_state)
     if (charge_state.charge_percent <= 40){
       bitmap_layer_set_bitmap(btt_layer, bt40_img);
       bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
-      replace_gbitmap_color(GColorBlack, GColorFolly, bt40_img, btt_layer);
+      replace_gbitmap_color(GColorBlack, GColorSunsetOrange, bt40_img, btt_layer);
     }
     if (charge_state.charge_percent <= 20){
       bitmap_layer_set_bitmap(btt_layer, bt20_img);
