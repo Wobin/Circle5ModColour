@@ -135,18 +135,28 @@ void handle_battery(BatteryChargeState charge_state)
     snprintf(battery_text, sizeof(battery_text), "%d", charge_state.charge_percent);
     if (charge_state.charge_percent <= 100){
       bitmap_layer_set_bitmap(btt_layer, bt100_img);
+      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
+      replace_gbitmap_color(GColorBlack, GColorBrightGreen, bt100_img, btt_layer);
     }
     if (charge_state.charge_percent <= 80){
       bitmap_layer_set_bitmap(btt_layer, bt80_img);
+      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
+      replace_gbitmap_color(GColorBlack, GColorInchworm, bt80_img, btt_layer);
     }
     if (charge_state.charge_percent <= 60){
       bitmap_layer_set_bitmap(btt_layer, bt60_img);
+      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
+      replace_gbitmap_color(GColorBlack, GColorIcterine, bt60_img, btt_layer);
     }
     if (charge_state.charge_percent <= 40){
       bitmap_layer_set_bitmap(btt_layer, bt40_img);
+      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
+      replace_gbitmap_color(GColorBlack, GColorFolly, bt40_img, btt_layer);
     }
     if (charge_state.charge_percent <= 20){
       bitmap_layer_set_bitmap(btt_layer, bt20_img);
+      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
+      replace_gbitmap_color(GColorBlack, GColorRed, bt20_img, btt_layer);
     }
   }
 }
