@@ -116,9 +116,9 @@ static void update_display(struct tm *current_time){
   set_container_image(&date_digits_images[0], date_digits_layers[0], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_mday/10], GPoint(91, 74), NULL);
   set_container_image(&date_digits_images[1], date_digits_layers[1], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_mday%10], GPoint(106, 74), NULL);
   
-  set_container_image(&time_digits_images[0], time_digits_layers[0], HOUR_IMAGE_RESOURCE_IDS[current_time->tm_hour%12], GPoint(11, 0), &GColorRed);
-  set_container_image(&mina_digits_images[0], mina_digits_layers[0], MINa_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(50, 26), &GColorRajah);
-  set_container_image(&minb_digits_images[0], minb_digits_layers[0], MINb_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(62, 39), &GColorRajah);
+  set_container_image(&time_digits_images[0], time_digits_layers[0], HOUR_IMAGE_RESOURCE_IDS[current_time->tm_hour%12], GPoint(11, 0), &GColorFolly);
+  set_container_image(&mina_digits_images[0], mina_digits_layers[0], MINa_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(50, 26), &GColorFolly);
+  set_container_image(&minb_digits_images[0], minb_digits_layers[0], MINb_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(62, 39), &GColorFolly);
 }
 
 
@@ -129,7 +129,6 @@ void handle_battery(BatteryChargeState charge_state)
   if (charge_state.is_charging)
   {
     bitmap_layer_set_bitmap(btt_layer, bt100_img);
-    bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
     replace_gbitmap_color(GColorBlack, GColorMediumSpringGreen, bt100_img, btt_layer);
   }
   else
@@ -137,30 +136,26 @@ void handle_battery(BatteryChargeState charge_state)
     snprintf(battery_text, sizeof(battery_text), "%d", charge_state.charge_percent);
     if (charge_state.charge_percent <= 100){
       bitmap_layer_set_bitmap(btt_layer, bt100_img);
-      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
       replace_gbitmap_color(GColorBlack, GColorBrightGreen, bt100_img, btt_layer);
     }
     if (charge_state.charge_percent <= 80){
       bitmap_layer_set_bitmap(btt_layer, bt80_img);
-      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
       replace_gbitmap_color(GColorBlack, GColorInchworm, bt80_img, btt_layer);
     }
     if (charge_state.charge_percent <= 60){
       bitmap_layer_set_bitmap(btt_layer, bt60_img);
-      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
       replace_gbitmap_color(GColorBlack, GColorIcterine, bt60_img, btt_layer);
     }
     if (charge_state.charge_percent <= 40){
       bitmap_layer_set_bitmap(btt_layer, bt40_img);
-      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
       replace_gbitmap_color(GColorBlack, GColorSunsetOrange, bt40_img, btt_layer);
     }
     if (charge_state.charge_percent <= 20){
       bitmap_layer_set_bitmap(btt_layer, bt20_img);
-      bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
       replace_gbitmap_color(GColorBlack, GColorRed, bt20_img, btt_layer);
     }
   }
+  bitmap_layer_set_compositing_mode(btt_layer, GCompOpSet);
 }
 
 void handle_bluetooth(bool connected) {
